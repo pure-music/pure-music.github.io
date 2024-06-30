@@ -1,6 +1,6 @@
 site:
-  name: Flyy
-  site: 'https://flyy.caij.xyz'
+  name: PureMusic
+  site: 'https://music.caij.xyz'
   base: '/'
   trailingSlash: true
 
@@ -9,9 +9,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Flyy
-    template: '%s — Flyy'
-  description: "Clean and Beautiful Twitter&X App"
+    default: PureMusic
+    template: '%s — PureMusic'
+  description: "A local and cloud music player"
   robots:
     index: true
     follow: true

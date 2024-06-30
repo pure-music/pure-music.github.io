@@ -1,11 +1,10 @@
 {
   "site": {
-    "title": "Flyy-Twitter&X App",
-    "description": "Clean、Beautiful、NO ADs Twitter&X App"
+    "title": "PureMusic",
+    "description": "A Clean 、Beautiful local and cloud music player"
   },
   "main": {
     "header": {
-      "home": "Home",
       "features": "Features",
       "pricing": "Pricing",
       "apps": "More Apps",
@@ -15,34 +14,34 @@
       "download": "Download"
     },
     "home": {
-      "title": "Beautiful Twitter&X App",
-      "description": "Come and experience a clean, ad-free, and powerful Twitter&X app."
+      "title": "A Clean 、Beautiful local and cloud music player",
+      "description": "Supports playback from local storage, Baidu Netdisk, Alibaba Cloud, WebDAV, Google Drive, OneDrive, Dropbox, and other platforms. It also supports Plex, Emby, Jellyfin, Subsonic media servers, and is compatible with Android, Windows, Mac, and Linux platforms."
     },
     "features": {
-      "title": "What you get with Flyy",
+      "title": "What you get with PureMusic",
       "item1": {
-        "title": "Timeline",
-        "description": "Supports following, recommend, list, user timeline"
+        "title": "Media Source",
+        "description": "Supports playback from local storage, Baidu Netdisk, Alibaba Cloud, WebDAV, Google Drive, OneDrive, Dropbox."
       },
       "item2": {
-        "title": "Post&Comment",
-        "description": "Supports posting or replying to tweets"
+        "title": "Media Service",
+        "description": "It also supports Plex, Emby, Jellyfin, Subsonic media servers."
       },
       "item3": {
-        "title": "Block ADs",
-        "description": "Supports blocking ads"
+        "title": "Platforms",
+        "description": "Is compatible with Android、iOS, Windows, Mac, and Linux platforms."
       },
       "item4": {
-        "title": "Edit Profile",
-        "description": "Edit name、avatar、desc、website、bio.."
+        "title": "Play History",
+        "description": "Record playback history"
       },
       "item5": {
-        "title": "Download medias",
-        "description": "Supports downloads of all tweet media"
+        "title": "Create playlist",
+        "description": "Supports creating playlists, and sync cloud"
       },
       "item6": {
-        "title": "Bookmark Folder&Search",
-        "description": "Bookmark folder manager and search"
+        "title": "Player Theme",
+        "description": "Supports a wide variety of player themes"
       }
     },
     "prices": {
@@ -50,39 +49,29 @@
       "free": {
         "title": "Free",
         "period": "Lifetime",
-        "item1": "Timeline",
-        "item2": "Post",
-        "item3": "Comment",
-        "item4": "Search",
-        "item5": "Bookmark"
+        "item1": "Play local song"
       },
       "premiummonth": {
         "title": "Premium",
         "period": "Per Month",
         "item1": "NO ADs",
-        "item2": "Download medias",
-        "item3": "Bookmark manager by folder",
-        "item4": "Bookmark search",
-        "item5": "Access records on Tweet&User",
-        "item6": "Mute&Block word work on anywhere"
+        "item2": "Play cloud song file",
+        "item3": "Player Theme"
       },
       "premiumyear": {
         "title": "Premium",
         "period": "Per Year",
         "item1": "NO ADs",
-        "item2": "Download medias",
-        "item3": "Bookmark manager by folder",
-        "item4": "Bookmark search",
-        "item5": "Access records on Tweet&User",
-        "item6": "Mute&Block word work on anywhere",
+        "item2": "Play cloud song file",
+        "item3": "Player Theme",
         "ribbonTitle": "popular"
       }
     },
     "apps": {
       "title": "More Apps by Developer",
       "item1": {
-        "title": "PureMusic",
-        "description": "A music player that supports cloud drive audio and Emby Jelly Subsonic media services"
+        "title": "Flyy",
+        "description": "Clean, ad-free, and powerful Twitter&X app."
       },
       "item2": {
         "title": "VideoDownload",

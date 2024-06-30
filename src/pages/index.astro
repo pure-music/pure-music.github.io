@@ -30,7 +30,7 @@ const metadata = {
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6">
       <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
         <div class="py-12 md:py-20 lg:py-0 lg:flex lg:gap-8 md:mt-20">
-          <div class="text-center md:ml-3 lg:text-left pb-10 md:pb-16 mx-auto md:mt-5">
+          <div class="basis-2/3 text-center md:ml-3 lg:text-left pb-10 md:pb-16 mx-auto md:mt-5">
             <h1
               class="text-5xl md:text-6xl font-bold leading-tighter mb-4 font-heading dark:text-gray-200 text-start">
               <span class="text-2xl">{t("main.home.title")}</span>
@@ -52,13 +52,13 @@ const metadata = {
 
               <IconTextButton id="apk_down" icon="tabler:brand-android" text="APK Download"
                        class="ml-2 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto"
-                      href="https://github.com/funcenter/flyy/releases">
+                      href="https://github.com/pure-music/PureMusic/releases">
                 
               </IconTextButton>
             </div>
           </div>
 
-          <div class="basis-1/2">
+          <div class="basis-1/3">
             <div class="relative flex m-auto max-w-5xl">
               <Image
                 class="mx-auto rounded-md w-full"
@@ -151,18 +151,6 @@ const metadata = {
           {
             description: t("main.prices.free.item1"),
           },
-          {
-            description: t("main.prices.free.item2"),
-          },
-          {
-            description: t("main.prices.free.item3"),
-          },
-          {
-            description: t("main.prices.free.item4"),
-          },
-          {
-            description: t("main.prices.free.item5"),
-          },
         ]
       },
       {
@@ -178,15 +166,6 @@ const metadata = {
           },
           {
             description: t("main.prices.premiummonth.item3"),
-          },
-          {
-            description: t("main.prices.premiummonth.item4"),
-          },
-          {
-            description: t("main.prices.premiummonth.item5"),
-          },
-          {
-            description: t("main.prices.premiummonth.item6"),
           },
         ],
       },
@@ -204,15 +183,6 @@ const metadata = {
           {
             description: t("main.prices.premiumyear.item3"),
           },
-          {
-            description: t("main.prices.premiumyear.item4"),
-          },
-          {
-            description: t("main.prices.premiumyear.item5"),
-          },
-          {
-            description: t("main.prices.premiumyear.item6"),
-          },
         ],
         ribbonTitle: t("main.prices.premiumyear.ribbonTitle"),
         hasRibbon: true,
@@ -226,7 +196,7 @@ const metadata = {
     columns={3}
     items={[
       {
-        icon: '~/assets/images/puremusic-app-icon.png',
+        icon: '~/assets/images/flyy-app-icon.png',
         title: t("main.apps.item1.title"),
         description: t("main.apps.item1.description"),
         href: "https://music.caij.xyz/",
