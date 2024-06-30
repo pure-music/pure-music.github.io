@@ -9,6 +9,7 @@ import Image from "../components/common/Image.astro";
 import Features2 from "../components/widgets/Features2.astro";
 import { t, changeLanguage } from "i18next";
 import IconTextButton from "../components/ui/IconTextButton.astro";
+import i18next from "i18next";
 
 changeLanguage("en");
 
@@ -41,7 +42,7 @@ const metadata = {
             </div>
 
 
-            <div slot="actions" class="flex max-w-sm gap-4">
+            <div slot="actions" class="flex">
               <!--<Button variant="link" href="">-->
               <!--  <Image src={appStoreImg} alt="App Store Image" width={150} />-->
               <!--</Button>-->
@@ -50,11 +51,17 @@ const metadata = {
                 <Image src={googlePlayImg} alt="Google Play Image" width={150} height={44.5}/>
               </Button>
 
-              <IconTextButton id="apk_down" icon="tabler:brand-android" text="APK Download"
-                       class="ml-2 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto"
-                      href="https://github.com/pure-music/PureMusic/releases">
-                
-              </IconTextButton>
+              { i18next.language === "zh" ? (
+                <IconTextButton id="apk_down" icon="tabler:brand-android" text="云盘密码2222"
+                                class="ml-2 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto"
+                                href="https://wwqu.lanzoum.com/b03251ujg">
+                </IconTextButton>
+              ) : (
+                  <IconTextButton id="apk_down" icon="tabler:brand-android" text="Github APK Download"
+                                  class="ml-2 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto"
+                                  href="https://github.com/pure-music/PureMusic/releases">
+                  </IconTextButton>)
+              }
             </div>
           </div>
 
