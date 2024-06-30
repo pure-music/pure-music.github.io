@@ -1,0 +1,21 @@
+---
+import { SITE } from 'astrowind:config';
+import Image from "./common/Image.astro";
+
+const appIcon = '~/assets/images/app-icon.png';
+---
+
+
+<div style="display:flex; align-items: center">
+  <Image
+    class="mx-auto w-full"
+    width={40}
+    height={40}
+    layout="fixed"
+    alt=""
+    src={appIcon}/>
+
+  <span class="self-center ml-4 ltr:mr-10 rtl:ml-0 rtl:mr-20 text-base md:text-lg font-bold text-gray-900 whitespace-nowrap dark:text-white">{SITE?.name}</span>
+  
+</div>
+

@@ -1,0 +1,99 @@
+{
+  "site": {
+    "title": "Flyy-Twitter&X App",
+    "description": "Clean、Beautiful、NO ADs Twitter&X App"
+  },
+  "main": {
+    "header": {
+      "home": "Home",
+      "features": "Features",
+      "pricing": "Pricing",
+      "apps": "More Apps",
+      "changelog": "Changelog"
+    },
+    "action": {
+      "download": "Download"
+    },
+    "home": {
+      "title": "Beautiful Twitter&X App",
+      "description": "Come and experience a clean, ad-free, and powerful Twitter&X app."
+    },
+    "features": {
+      "title": "What you get with Flyy",
+      "item1": {
+        "title": "Timeline",
+        "description": "Supports following, recommend, list, user timeline"
+      },
+      "item2": {
+        "title": "Post&Comment",
+        "description": "Supports posting or replying to tweets"
+      },
+      "item3": {
+        "title": "Block ADs",
+        "description": "Supports blocking ads"
+      },
+      "item4": {
+        "title": "Edit Profile",
+        "description": "Edit name、avatar、desc、website、bio.."
+      },
+      "item5": {
+        "title": "Download medias",
+        "description": "Supports downloads of all tweet media"
+      },
+      "item6": {
+        "title": "Bookmark Folder&Search",
+        "description": "Bookmark folder manager and search"
+      }
+    },
+    "prices": {
+      "title": "Our prices",
+      "free": {
+        "title": "Free",
+        "period": "Lifetime",
+        "item1": "Timeline",
+        "item2": "Post",
+        "item3": "Comment",
+        "item4": "Search",
+        "item5": "Bookmark"
+      },
+      "premiummonth": {
+        "title": "Premium",
+        "period": "Per Month",
+        "item1": "NO ADs",
+        "item2": "Download medias",
+        "item3": "Bookmark manager by folder",
+        "item4": "Bookmark search",
+        "item5": "Access records on Tweet&User",
+        "item6": "Mute&Block word work on anywhere"
+      },
+      "premiumyear": {
+        "title": "Premium",
+        "period": "Per Year",
+        "item1": "NO ADs",
+        "item2": "Download medias",
+        "item3": "Bookmark manager by folder",
+        "item4": "Bookmark search",
+        "item5": "Access records on Tweet&User",
+        "item6": "Mute&Block word work on anywhere",
+        "ribbonTitle": "popular"
+      }
+    },
+    "apps": {
+      "title": "More Apps by Developer",
+      "item1": {
+        "title": "PureMusic",
+        "description": "A music player that supports cloud drive audio and Emby Jelly Subsonic media services"
+      },
+      "item2": {
+        "title": "VideoDownload",
+        "description": "youtube、instargram、Twitter、facebook、spotify、tt media download"
+      },
+      "item3": {
+        "title": "See",
+        "description": "A clean app for Weibo"
+      }
+    },
+    "privacy": "Privacy Policy",
+    "support": "Support"
+  }
+}

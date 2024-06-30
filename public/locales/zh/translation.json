@@ -1,0 +1,100 @@
+{
+  "site": {
+    "title": "Flyy-Twitter&X App",
+    "description": "简洁、无广告、功能强大的Twitter&X app"
+  },
+  "main": {
+    "header": {
+      "home": "首页",
+      "features": "功能",
+      "pricing": "价格",
+      "apps": "更多App",
+      "changelog": "更新记录"
+    },
+
+    "action": {
+      "download": "下载"
+    },
+    "home": {
+      "title": "简洁的Twitter&X App",
+      "description": "快来体验简洁、无广告、功能强大的Twitter&X app"
+    },
+    "features": {
+      "title": "Flyy的功能",
+      "item1": {
+        "title": "时间线",
+        "description": "支持关注、推荐、列表、用户、书签等时间线阅读"
+      },
+      "item2": {
+        "title": "发布和评论推文",
+        "description": "支持文字和图片发布和评论推文"
+      },
+      "item3": {
+        "title": "屏蔽广告",
+        "description": "支持屏蔽广告"
+      },
+      "item4": {
+        "title": "编辑个人信息",
+        "description": "支持编辑名称、头像、简介、网站等"
+      },
+      "item5": {
+        "title": "下载媒体文件",
+        "description": "支持下载所有推文的媒体文件"
+      },
+      "item6": {
+        "title": "书签文件夹管理和搜索",
+        "description": "支持书签文件夹管理和搜索"
+      }
+    },
+    "prices": {
+      "title": "价格",
+      "free": {
+        "title": "免费版",
+        "period": "永久",
+        "item1": "时间线阅读",
+        "item2": "发布推文",
+        "item3": "评论推文",
+        "item4": "搜索",
+        "item5": "书签"
+      },
+      "premiummonth": {
+        "title": "Premium",
+        "period": "每月",
+        "item1": "屏蔽广告",
+        "item2": "下载媒体文件",
+        "item3": "书签文件夹管理",
+        "item4": "书签内容搜索",
+        "item5": "推文和用户浏览历史",
+        "item6": "屏蔽词增强，支持任意地方"
+      },
+      "premiumyear": {
+        "title": "Premium",
+        "period": "每年",
+        "item1": "屏蔽广告",
+        "item2": "下载媒体文件",
+        "item3": "书签文件夹管理",
+        "item4": "书签内容搜索",
+        "item5": "推文和用户浏览历史",
+        "item6": "屏蔽词增强，支持任意地方",
+        "ribbonTitle": "推荐"
+      }
+    },
+    "apps": {
+      "title": "开发者的更多App",
+      "item1": {
+        "title": "棉花音乐",
+        "description": "一个简洁的音乐播放器，支持本地文件、挂载云盘音乐、Emby Jelly Subsonic等媒体服务"
+      },
+      "item2": {
+        "title": "视频下载器",
+        "description": "支持youtube、instargram、Twitter、facebook、spotify、tt 媒体文件下载"
+      },
+      "item3": {
+        "title": "See",
+        "description": "一个简洁无广告的微博App"
+      }
+    },
+    "privacy": "隐私协议",
+    "support": "支持"
+  }
+}

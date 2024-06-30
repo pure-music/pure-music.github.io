@@ -1,0 +1,48 @@
+---
+import { Icon } from 'astro-icon/components';
+import { twMerge } from 'tailwind-merge';
+import type { CallToAction as Props } from '~/types';
+
+const {
+  variant = 'secondary',
+  target,
+  text = Astro.slots.render('default'),
+  icon = '',
+  class: className = '',
+  type,
+  ...rest
+} = Astro.props;
+
+const variants = {
+  primary: 'btn-primary',
+  secondary: 'btn-secondary',
+  tertiary: 'btn btn-tertiary',
+  link: 'cursor-pointer hover:text-primary',
+};
+---
+
+{
+  // type === 'button' || type === 'submit' || type === 'reset' ? (
+  //   <button type={type} class={twMerge(variants[variant] || '', className)} {...rest}>
+  //     {icon && <Icon name={icon} class="w-5 h-5 mr-1rtl:mr-1 rtl:-ml-1.5 inline-block" />}
+  //     <Fragment set:html={text} />
+  //   </button>
+  // ) : (
+  //   <a
+  //     class={twMerge(variants[variant] || '', className)}
+  //     {...(target ? { target: target, rel: 'noopener noreferrer' } : {})}
+  //     {...rest}
+  //   >
+  //     {icon && <Icon name={icon} class="w-5 h-5 mr-1 rtl:mr-1 rtl:-ml-1.5 inline-block" />}
+  //     <Fragment set:html={text} />
+  //   </a>
+  // )
+  <a
+    class={twMerge( 'inline-flex items-center justify-center rounded-md border-gray-400 border bg-transparent font-medium text-center text-base text-page leading-snug transition py-3.5 px-6 md:px-8 ease-in duration-200 focus:ring-blue-500 focus:ring-offset-blue-200 focus:ring-2 focus:ring-offset-2 hover:bg-gray-100 hover:border-gray-600 dark:text-slate-300 dark:border-slate-500 dark:hover:bg-slate-800 dark:hover:border-slate-800 cursor-pointer', className)}
+    {...(target ? { target: target, rel: 'noopener noreferrer' } : {})}
+    {...rest}
+  >
+    {icon && <Icon name={icon} class="w-5 h-5 mr-1 rtl:mr-1 rtl:-ml-1.5 inline-block" />}
+    <Fragment set:html={text} />
+  </a>
+}

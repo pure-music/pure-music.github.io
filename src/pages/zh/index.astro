@@ -1,0 +1,253 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import Header from "~/components/widgets/Header.astro";
+import Prices from "../../components/widgets/Pricing.astro";
+import Features from "../../components/widgets/Features.astro";
+import { SITE } from "astrowind:config";
+import Button from "../../components/ui/Button.astro";
+import Image from "../../components/common/Image.astro";
+import Features2 from "../../components/widgets/Features2.astro";
+import { t, changeLanguage } from "i18next";
+import IconTextButton from "../../components/ui/IconTextButton.astro";
+
+changeLanguage("zh");
+
+const appStoreImg = "~/assets/images/app-store.png";
+const appStoreDownloadLink = "https://play.google.com/store/apps/details?id=com.caij.twiper";
+const googlePlayImg = "~/assets/images/google-play.png";
+const googlePlayDownloadLink = "https://play.google.com/store/apps/details?id=com.caij.twiper";
+const imgHomeScreen = "~/assets/images/app-home-screen.png";
+const metadata = {
+    title: t("site.title"),
+    description: t("site.description"),
+    ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="relative md:-mt-[76px] not-prose">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
+        <div class="py-12 md:py-20 lg:py-0 lg:flex lg:gap-8 md:mt-20">
+          <div class="text-center md:ml-3 lg:text-left pb-10 md:pb-16 mx-auto md:mt-5">
+            <h1
+              class="text-5xl md:text-6xl font-bold leading-tighter mb-4 font-heading dark:text-gray-200 text-start">
+              <span class="text-2xl">{t("main.home.title")}</span>
+            </h1>
+
+            <div class="max-w-3xl mx-auto lg:max-w-none">
+              <p class="text-xl text-muted mb-6 dark:text-slate-300 text-start">{t("main.home.description")}</p>
+            </div>
+
+
+            <div slot="actions" class="flex max-w-sm gap-4">
+              <!--<Button variant="link" href="">-->
+              <!--  <Image src={appStoreImg} alt="App Store Image" width={150} />-->
+              <!--</Button>-->
+
+              <Button variant="link" href={googlePlayDownloadLink}>
+                <Image src={googlePlayImg} alt="Google Play Image" width={150} height={44.5}/>
+              </Button>
+
+              <IconTextButton id="apk_down" icon="tabler:brand-android" text="APK Download"
+                       class="ml-2 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto"
+                      href="https://github.com/funcenter/flyy/releases">
+                
+              </IconTextButton>
+            </div>
+          </div>
+
+          <div class="basis-1/2">
+            <div class="relative flex m-auto max-w-5xl">
+              <Image
+                class="mx-auto rounded-md w-full"
+                widths={[400, 768, 1024, 2040]}
+                sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                loading="eager"
+                width={300}
+                src = "~/assets/images/app-home-screen.png" alt = "google play" />
+
+              <!--<Image-->
+              <!--  class="mx-auto rounded-md w-full"-->
+              <!--  widths={[400, 768, 1024, 2040]}-->
+              <!--  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"-->
+              <!--  loading="eager"-->
+              <!--  width={200}-->
+              <!--  height={437}-->
+              <!--  src = "~/assets/images/app-home-screen.png" alt = "" />-->
+              
+              <!--<Image-->
+              <!--  class="mx-auto rounded-md w-full"-->
+              <!--  widths={[400, 768, 1024, 2040]}-->
+              <!--  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"-->
+              <!--  loading="eager"-->
+              <!--  width={200}-->
+              <!--  height={437}-->
+              <!--  src = "~/assets/images/app-home-.png" alt = "" />-->
+              
+              <!--<Image-->
+              <!--  class="mx-auto rounded-md w-full"-->
+              <!--  widths={[400, 768, 1024, 2040]}-->
+              <!--  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"-->
+              <!--  loading="eager"-->
+              <!--  width={200}-->
+              <!--  height={437}-->
+              <!--  src = "~/assets/images/app-home-.png" alt = "" />-->
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </section>
+
+  <Features
+    id="features"
+    title= {t("main.features.title")}
+    columns={3}
+    items={[
+      {
+        title: t("main.features.item1.title"),
+        description: t("main.features.item1.description"),
+        icon: 'tabler:brand-x',
+      },
+      {
+        title: t("main.features.item2.title"),
+        description: t("main.features.item2.description"),
+        icon: 'tabler:components',
+      },
+      {
+        title: t("main.features.item3.title"),
+        description: t("main.features.item3.description"),
+        icon: 'tabler:ad',
+      },
+      {
+        title: t("main.features.item4.title"),
+        description: t("main.features.item4.description"),
+        icon: 'tabler:edit',
+      },
+      {
+        title: t("main.features.item5.title"),
+        description: t("main.features.item5.description"),
+        icon: 'tabler:download',
+      },
+      {
+        title: t("main.features.item6.title"),
+        description: t("main.features.item6.description"),
+        icon: 'tabler:bookmark',
+      },
+    ]}
+  />
+
+  <Prices
+    id="pricing"
+    title={t("main.prices.title")}
+    prices={[
+      {
+        title: t("main.prices.free.title"),
+        price: 0,
+        period: t("main.prices.free.period"),
+        items: [
+          {
+            description: t("main.prices.free.item1"),
+          },
+          {
+            description: t("main.prices.free.item2"),
+          },
+          {
+            description: t("main.prices.free.item3"),
+          },
+          {
+            description: t("main.prices.free.item4"),
+          },
+          {
+            description: t("main.prices.free.item5"),
+          },
+        ]
+      },
+      {
+        title: t("main.prices.premiummonth.title"),
+        price: 1,
+        period: t("main.prices.premiummonth.period"),
+        items: [
+          {
+            description: t("main.prices.premiummonth.item1"),
+          },
+          {
+            description: t("main.prices.premiummonth.item2"),
+          },
+          {
+            description: t("main.prices.premiummonth.item3"),
+          },
+          {
+            description: t("main.prices.premiummonth.item4"),
+          },
+          {
+            description: t("main.prices.premiummonth.item5"),
+          },
+          {
+            description: t("main.prices.premiummonth.item6"),
+          },
+        ],
+      },
+      {
+        title: t("main.prices.premiumyear.title"),
+        price: 6,
+        period: t("main.prices.premiumyear.period"),
+        items: [
+          {
+            description: t("main.prices.premiumyear.item1"),
+          },
+          {
+            description: t("main.prices.premiumyear.item2"),
+          },
+          {
+            description: t("main.prices.premiumyear.item3"),
+          },
+          {
+            description: t("main.prices.premiumyear.item4"),
+          },
+          {
+            description: t("main.prices.premiumyear.item5"),
+          },
+          {
+            description: t("main.prices.premiumyear.item6"),
+          },
+        ],
+        ribbonTitle: t("main.prices.premiumyear.ribbonTitle"),
+        hasRibbon: true,
+      },
+    ]}
+  />
+
+  <Features2
+    id="apps"
+    title={t("main.apps.title")}
+    columns={3}
+    items={[
+      {
+        icon: '~/assets/images/puremusic-app-icon.png',
+        title: t("main.apps.item1.title"),
+        description: t("main.apps.item1.description"),
+        href: "https://music.caij.xyz/",
+        alt: t("main.apps.item1.title")
+      },
+      {
+        icon: '~/assets/images/download-app-icon.png',
+        title: t("main.apps.item2.title"),
+        description: t("main.apps.item2.description"),
+        href: "https://dkit.caij.xyz/",
+        alt: t("main.apps.item2.title")
+      },
+      {
+        icon: '~/assets/images/see-app-icon.png',
+        title: t("main.apps.item3.title"),
+        description: t("main.apps.item3.description"),
+        href: "https://see.caij.xyz/",
+        alt: t("main.apps.item3.title")
+      },
+      
+    ]}
+  />
+
+</Layout>

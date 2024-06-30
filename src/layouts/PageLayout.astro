@@ -1,0 +1,62 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Footer from '~/components/widgets/Footer.astro';
+
+
+import type { MetaData } from '~/types';
+import {getHomePermalink, getPermalink} from "../utils/permalinks";
+import { t } from "i18next";
+
+export interface Props {
+  metadata?: MetaData;
+  isCheckDown
+}
+
+const { metadata } = Astro.props;
+
+const headerData = {
+  links: [
+    // { text: t("main.header.home"), href: getHomePermalink() },
+    { text: t("main.header.features"), href: `${getHomePermalink()}#features` },
+    { text: t("main.header.pricing"), href: `${getHomePermalink()}#pricing` },
+    { text: t("main.header.apps"), href: `${getHomePermalink()}#apps` },
+    { text: t("main.support"), href: `${getHomePermalink()}#footer` },
+    { text: t("main.header.changelog"), href: "https://github.com/funcenter/flyy/releases"},
+  ],
+  actions: [{
+    variant: 'primary',
+    text: t("main.action.download"),
+    href: getHomePermalink(),
+    class: ""
+  }],
+  position: "left"
+}
+
+const footerData =  {
+  links: [
+    {
+      title: t("main.support"),
+      links: [
+        { text: 'flyy.service.pub@gmail.com', href: 'mailto:flyy.service.pub@gmail.com' },
+        { text: 'Twitter&X', href: 'https://x.com/flyy_hub' },
+        { text: 'Telegram', href: 'https://t.me/twiper' },
+      ],
+    },
+  ],
+  secondaryLinks: [
+    { text: t("main.privacy"), href: getPermalink('/privacy') },
+  ]}
+---
+
+<Layout metadata={metadata}>
+  <slot name="header">
+    <Header {...headerData} isSticky false false />
+  </slot>
+  <main>
+    <slot />
+  </main>
+  <slot name="footer">
+    <Footer {... footerData} />
+  </slot>
+</Layout>
