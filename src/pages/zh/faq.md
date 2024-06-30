@@ -33,7 +33,7 @@ layout: '~/layouts/MarkdownLayout.astro'
   * 由于修改歌手名字工作量很大，如过没有歌手名直接默认使用专辑歌手名;
 * 歌词: 保存在歌曲同一个目录，与歌曲文件名需要保持一致，文件格式是lrc 
 
-![image](puremusic/faq/file_folder_design2.webp)
+![image](~/assets/images/file_folder_design2.webp)
 
 #### 方式二：读取文件名解析
 
