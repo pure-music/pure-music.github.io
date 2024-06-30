@@ -1,5 +1,6 @@
 {
   "site": {
+    "app_name": "棉花音乐",
     "title": "棉花音乐",
     "description": "简洁的本地及网盘音乐播放器"
   },

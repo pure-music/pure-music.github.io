@@ -1,5 +1,6 @@
 {
   "site": {
+    "app_name": "PureMusic",
     "title": "PureMusic",
     "description": "A Clean 、Beautiful local and cloud music player"
   },
