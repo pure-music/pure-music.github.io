@@ -6,10 +6,12 @@
       document.addEventListener('DOMContentLoaded',  () => {
         const urlParams = new URLSearchParams(window.location.search);
         const code = urlParams.get(codeKey);
-        window.location.href = "puremusic://login?from=2&code=" + code
+        const element = document.getElementById('code');
+        element.textContent = code
       });
     </script>    
   </header>
   <body>
+    <p id="code"></p>
   </body>
 </html>
