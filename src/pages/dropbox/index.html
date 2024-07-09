@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <script>
+      const codeKey = "code"
+      document.addEventListener('DOMContentLoaded',  () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get(codeKey);
+        window.location.href = "puremusic://login?from=3&code=" + code
+      });
+    </script>    
+  </header>
+  <body>
+  </body>
+</html>
