@@ -48,7 +48,7 @@ const metadata = {
               <!--</Button>-->
 
               <Button variant="link" href={googlePlayDownloadLink}>
-                <Image src={googlePlayImg} alt="Google Play Image" width={150} height={44.5}/>
+                <Image src={googlePlayImg} alt="Google Play Image" width={160} height={45.5} class="h-9"/>
               </Button>
 
               <!--{ i18next.language === "zh" ? (-->
@@ -63,16 +63,22 @@ const metadata = {
               <!--    </IconTextButton>)-->
               <!--}-->
 
-              <IconTextButton id="apk_down" icon="tabler:brand-android" text="APK Download"
-                              class="ml-2 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto"
-                              href="https://github.com/pure-music/PureMusic/releases">
-              </IconTextButton>
             </div>
 
-              <IconTextButton text="使用教程"
-                              class="mt-5 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto"
-                              href= {getPermalink('/faq')}>
+            <div class="flex mt-6">
+
+              <IconTextButton id="apk_down" icon="tabler:brand-android" text="APK Download"
+                              class="py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto h-9"
+                              href="https://github.com/pure-music/PureMusic/releases">
               </IconTextButton>
+
+              <IconTextButton text="PC Download" icon="tabler:device-imac"
+                              class="ml-3 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto h-9"
+                              href="https://github.com/pure-music/PureMusic/releases" >
+              </IconTextButton>
+              
+            </div>
+
           </div>
 
           <div class="basis-1/3">
