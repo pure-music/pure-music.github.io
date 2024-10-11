@@ -39,14 +39,18 @@ const footerData =  {
       title: t("main.support"),
       links: [
         { text: 'music.service.pub@gmail.com', href: 'mailto:music.service.pub@gmail.com' },
-        { text: 'Twitter&X', href: 'https://x.com/flyy_hub' },
+        { text: 'QQ', href: '532791395' },
         { text: 'Telegram', href: 'https://t.me/ppuremusic' },
       ],
     },
   ],
   secondaryLinks: [
     { text: t("main.privacy"), href: getPermalink('/privacy') },
-  ]}
+  ],
+  footNote: `
+    <a class="text-blue-600 underline dark:text-muted" href="https://beian.miit.gov.cn/">粤ICP备2021141980号</a> 
+  `,
+}
 ---
 
 <Layout metadata={metadata}>
