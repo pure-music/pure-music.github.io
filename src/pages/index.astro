@@ -11,6 +11,7 @@ import { t, changeLanguage } from "i18next";
 import IconTextButton from "../components/ui/IconTextButton.astro";
 import i18next from "i18next";
 import {getPermalink} from "../utils/permalinks";
+import HeroIndex from "../components/widgets/HeroIndex.astro";
 
 changeLanguage("en");
 
@@ -27,102 +28,113 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <section class="relative md:-mt-[76px] not-prose">
-    <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-    <div class="relative max-w-5xl mx-auto px-4 sm:px-6">
-      <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
-        <div class="py-12 md:py-20 lg:py-0 lg:flex lg:gap-8 md:mt-20">
-          <div class="basis-2/3 text-center md:ml-3 lg:text-left pb-10 md:pb-16 mx-auto md:mt-5">
-            <h1
-              class="text-5xl md:text-6xl font-bold leading-tighter mb-4 font-heading dark:text-gray-200 text-start">
-              <span class="text-2xl">{t("main.home.title")}</span>
-            </h1>
+  <!--<section class="relative md:-mt-[76px] not-prose">-->
+  <!--  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>-->
+  <!--  <div class="relative max-w-5xl mx-auto px-4 sm:px-6">-->
+  <!--    <div class="pt-0 md:pt-[76px] pointer-events-none"></div>-->
+  <!--      <div class="py-12 md:py-20 lg:py-0 lg:flex lg:gap-8 md:mt-20">-->
+  <!--        <div class="basis-1/2 text-center md:ml-3 lg:text-left pb-10 md:pb-16 mx-auto">-->
+  <!--          <h1-->
+  <!--            class="text-5xl md:text-6xl font-bold leading-tighter mb-4 font-heading dark:text-gray-200 text-start">-->
+  <!--            <span class="text-2xl">{t("main.home.title")}</span>-->
+  <!--          </h1>-->
+  <!--      -->
+  <!--          <div class="max-w-3xl mx-auto lg:max-w-none">-->
+  <!--            <p class="text-xl text-muted mb-6 dark:text-slate-300 text-start">{t("main.home.description")}</p>-->
+  <!--          </div>-->
+  <!--      -->
+  <!--          <div slot="actions" class="flex">-->
+  <!--            &lt;!&ndash;<Button variant="link" href="">&ndash;&gt;-->
+  <!--            &lt;!&ndash;  <Image src={appStoreImg} alt="App Store Image" width={150} />&ndash;&gt;-->
+  <!--            &lt;!&ndash;</Button>&ndash;&gt;-->
+  <!--      -->
+  <!--            <Button variant="link" href={googlePlayDownloadLink}>-->
+  <!--              <Image src={googlePlayImg} alt="Google Play Image" width={160} height={45.5} class="h-9"/>-->
+  <!--            </Button>-->
+  <!--      -->
+  <!--            &lt;!&ndash;{ i18next.language === "zh" ? (&ndash;&gt;-->
+  <!--            &lt;!&ndash;  <IconTextButton id="apk_down" icon="tabler:brand-android" text="云盘密码2222"&ndash;&gt;-->
+  <!--            &lt;!&ndash;                  class="ml-2 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto"&ndash;&gt;-->
+  <!--            &lt;!&ndash;                  href="https://wwqu.lanzoum.com/b03251ujg">&ndash;&gt;-->
+  <!--            &lt;!&ndash;  </IconTextButton>&ndash;&gt;-->
+  <!--            &lt;!&ndash;) : (&ndash;&gt;-->
+  <!--            &lt;!&ndash;    <IconTextButton id="apk_down" icon="tabler:brand-android" text="Github APK Download"&ndash;&gt;-->
+  <!--            &lt;!&ndash;                    class="ml-2 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto"&ndash;&gt;-->
+  <!--            &lt;!&ndash;                    href="https://github.com/pure-music/PureMusic/releases">&ndash;&gt;-->
+  <!--            &lt;!&ndash;    </IconTextButton>)&ndash;&gt;-->
+  <!--            &lt;!&ndash;}&ndash;&gt;-->
+  <!--      -->
+  <!--          </div>-->
+  <!--      -->
+  <!--          <div class="flex mt-6">-->
+  <!--      -->
+  <!--            <IconTextButton id="apk_down" icon="tabler:brand-android" text="APK Download"-->
+  <!--                            class="py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto h-9"-->
+  <!--                            href="https://github.com/pure-music/PureMusic/releases">-->
+  <!--            </IconTextButton>-->
+  <!--      -->
+  <!--            <IconTextButton text="PC Download" icon="tabler:device-imac"-->
+  <!--                            class="ml-3 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto h-9"-->
+  <!--                            href="https://github.com/pure-music/PureMusic/releases" >-->
+  <!--            </IconTextButton>-->
+  <!--            -->
+  <!--          </div>-->
+  <!--      -->
+  <!--        </div>-->
+  <!--      -->
+  <!--        <div class="basis-1/2">-->
+  <!--          <div class="relative flex m-auto max-w-5xl">-->
+  <!--            <Image-->
+  <!--              class="mx-auto rounded-md w-full"-->
+  <!--              loading="eager"-->
+  <!--              src = "~/assets/images/app-home-screen.png" alt = "google play" />-->
+  <!--      -->
+  <!--            &lt;!&ndash;<Image&ndash;&gt;-->
+  <!--            &lt;!&ndash;  class="mx-auto rounded-md w-full"&ndash;&gt;-->
+  <!--            &lt;!&ndash;  widths={[400, 768, 1024, 2040]}&ndash;&gt;-->
+  <!--            &lt;!&ndash;  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"&ndash;&gt;-->
+  <!--            &lt;!&ndash;  loading="eager"&ndash;&gt;-->
+  <!--            &lt;!&ndash;  width={200}&ndash;&gt;-->
+  <!--            &lt;!&ndash;  height={437}&ndash;&gt;-->
+  <!--            &lt;!&ndash;  src = "~/assets/images/app-home-screen.png" alt = "" />&ndash;&gt;-->
+  <!--            -->
+  <!--            &lt;!&ndash;<Image&ndash;&gt;-->
+  <!--            &lt;!&ndash;  class="mx-auto rounded-md w-full"&ndash;&gt;-->
+  <!--            &lt;!&ndash;  widths={[400, 768, 1024, 2040]}&ndash;&gt;-->
+  <!--            &lt;!&ndash;  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"&ndash;&gt;-->
+  <!--            &lt;!&ndash;  loading="eager"&ndash;&gt;-->
+  <!--            &lt;!&ndash;  width={200}&ndash;&gt;-->
+  <!--            &lt;!&ndash;  height={437}&ndash;&gt;-->
+  <!--            &lt;!&ndash;  src = "~/assets/images/app-home-.png" alt = "" />&ndash;&gt;-->
+  <!--            -->
+  <!--            &lt;!&ndash;<Image&ndash;&gt;-->
+  <!--            &lt;!&ndash;  class="mx-auto rounded-md w-full"&ndash;&gt;-->
+  <!--            &lt;!&ndash;  widths={[400, 768, 1024, 2040]}&ndash;&gt;-->
+  <!--            &lt;!&ndash;  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"&ndash;&gt;-->
+  <!--            &lt;!&ndash;  loading="eager"&ndash;&gt;-->
+  <!--            &lt;!&ndash;  width={200}&ndash;&gt;-->
+  <!--            &lt;!&ndash;  height={437}&ndash;&gt;-->
+  <!--            &lt;!&ndash;  src = "~/assets/images/app-home-.png" alt = "" />&ndash;&gt;-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--  </div>-->
+  <!--</section>-->
 
-            <div class="max-w-3xl mx-auto lg:max-w-none">
-              <p class="text-xl text-muted mb-6 dark:text-slate-300 text-start">{t("main.home.description")}</p>
-            </div>
-
-            <div slot="actions" class="flex">
-              <!--<Button variant="link" href="">-->
-              <!--  <Image src={appStoreImg} alt="App Store Image" width={150} />-->
-              <!--</Button>-->
-
-              <Button variant="link" href={googlePlayDownloadLink}>
-                <Image src={googlePlayImg} alt="Google Play Image" width={160} height={45.5} class="h-9"/>
-              </Button>
-
-              <!--{ i18next.language === "zh" ? (-->
-              <!--  <IconTextButton id="apk_down" icon="tabler:brand-android" text="云盘密码2222"-->
-              <!--                  class="ml-2 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto"-->
-              <!--                  href="https://wwqu.lanzoum.com/b03251ujg">-->
-              <!--  </IconTextButton>-->
-              <!--) : (-->
-              <!--    <IconTextButton id="apk_down" icon="tabler:brand-android" text="Github APK Download"-->
-              <!--                    class="ml-2 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto"-->
-              <!--                    href="https://github.com/pure-music/PureMusic/releases">-->
-              <!--    </IconTextButton>)-->
-              <!--}-->
-
-            </div>
-
-            <div class="flex mt-6">
-
-              <IconTextButton id="apk_down" icon="tabler:brand-android" text="APK Download"
-                              class="py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto h-9"
-                              href="https://github.com/pure-music/PureMusic/releases">
-              </IconTextButton>
-
-              <IconTextButton text="PC Download" icon="tabler:device-imac"
-                              class="ml-3 py-1.5 px-3 md:px-3 font-semibold shadow-none text-xs w-auto h-9"
-                              href="https://github.com/pure-music/PureMusic/releases" >
-              </IconTextButton>
-              
-            </div>
-
-          </div>
-
-          <div class="basis-1/3">
-            <div class="relative flex m-auto max-w-5xl">
-              <Image
-                class="mx-auto rounded-md w-full"
-                widths={[400, 768, 1024, 2040]}
-                sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-                loading="eager"
-                width={300}
-                src = "~/assets/images/app-home-screen.png" alt = "google play" />
-
-              <!--<Image-->
-              <!--  class="mx-auto rounded-md w-full"-->
-              <!--  widths={[400, 768, 1024, 2040]}-->
-              <!--  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"-->
-              <!--  loading="eager"-->
-              <!--  width={200}-->
-              <!--  height={437}-->
-              <!--  src = "~/assets/images/app-home-screen.png" alt = "" />-->
-              
-              <!--<Image-->
-              <!--  class="mx-auto rounded-md w-full"-->
-              <!--  widths={[400, 768, 1024, 2040]}-->
-              <!--  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"-->
-              <!--  loading="eager"-->
-              <!--  width={200}-->
-              <!--  height={437}-->
-              <!--  src = "~/assets/images/app-home-.png" alt = "" />-->
-              
-              <!--<Image-->
-              <!--  class="mx-auto rounded-md w-full"-->
-              <!--  widths={[400, 768, 1024, 2040]}-->
-              <!--  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"-->
-              <!--  loading="eager"-->
-              <!--  width={200}-->
-              <!--  height={437}-->
-              <!--  src = "~/assets/images/app-home-.png" alt = "" />-->
-            </div>
-          </div>
-        </div>
-      
-    </div>
-  </section>
+  <HeroIndex
+    tagline={t("main.home.app_description")}
+    title={t("main.home.title")}
+    subtitle={t("main.home.description")}
+    actions={[
+      { variant: 'primary', text: 'Google Play', href: `${googlePlayDownloadLink}`, icon: 'tabler:square-rounded-arrow-right' },
+      { text: 'APK', href: 'https://github.com/pure-music/PureMusic/releases', icon: "tabler:brand-android" },
+      { text: 'PC', href: 'https://github.com/pure-music/PureMusic/releases', icon: "tabler:device-imac"},
+    ]}
+    image={{
+      src: "~/assets/images/app-home-screen.png",
+      alt: 'app cover',
+    }}
+  />
 
   <Features
     id="features"

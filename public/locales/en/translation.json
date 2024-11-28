@@ -2,7 +2,7 @@
   "site": {
     "app_name": "PureMusic",
     "title": "PureMusic",
-    "description": "A Clean 、Beautiful local and cloud music player"
+    "description": "Play and cast music from your device, Plex, Emby, Jellyfin, Subsonic, OpenSubsonic, Kodi, Samba (SMB v2/v3), WebDAV servers or supported Cloud providers (Google Drive, OneDrive, DropBox, Box, pCloud)!"
   },
   "main": {
     "header": {
@@ -15,8 +15,9 @@
       "download": "Download"
     },
     "home": {
-      "title": "A Clean 、Beautiful local and cloud music player",
-      "description": "Supports playback from local storage, Baidu Netdisk, Alibaba Cloud, WebDAV, Google Drive, OneDrive, Dropbox, and other platforms. It also supports Plex, Emby, Jellyfin, Subsonic media servers, and is compatible with Android, Windows, Mac, and Linux platforms."
+      "title": "PureMusic",
+      "app_description": "Listen to music anytime, anywhere",
+      "description": "Play and cast music from your device, Plex, Emby, Jellyfin, Subsonic, OpenSubsonic, Kodi, Samba (SMB v2/v3), WebDAV servers or supported Cloud providers (Google Drive, OneDrive, DropBox, Box, pCloud)! Don't wait any longer and enjoy the ultimate music experience. Download now to change the way you listen to music."
     },
     "features": {
       "title": "What you get with PureMusic",
