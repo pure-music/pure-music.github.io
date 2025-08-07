@@ -9,8 +9,8 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: PureMusic
-    template: '%s — PureMusic'
+    default: Cotton Music
+    template: '%s — Cotton Music'
   description: "A local and cloud music player"
   robots:
     index: true
