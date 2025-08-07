@@ -7,6 +7,7 @@ import type { Props as AstroSeoProps } from '@astrolib/seo';
 import { SITE, METADATA, I18N } from 'astrowind:config';
 import type { MetaData } from '~/types';
 import { getCanonical } from '~/utils/permalinks';
+import { t } from "i18next";
 
 import { adaptOpenGraphImages } from '~/utils/images';
 
@@ -45,7 +46,7 @@ const seoProps: AstroSeoProps = merge(
   },
   {
     title: METADATA?.title?.default,
-    titleTemplate: METADATA?.title?.template,
+    titleTemplate: `%s - ${t("site.app_name")}`,
     noindex: typeof METADATA?.robots?.index !== 'undefined' ? !METADATA.robots.index : undefined,
     nofollow: typeof METADATA?.robots?.follow !== 'undefined' ? !METADATA.robots.follow : undefined,
     description: METADATA?.description,

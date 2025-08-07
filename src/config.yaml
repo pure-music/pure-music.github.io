@@ -1,5 +1,5 @@
 site:
-  name: PureMusic
+  name: Cotton Music
   site: 'https://music.caij.xyz'
   base: '/'
   trailingSlash: true
