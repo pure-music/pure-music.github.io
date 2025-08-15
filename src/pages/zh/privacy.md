@@ -39,7 +39,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 由于App支持桌面组件，桌面组件在Android系统的设计中是静态广播，需要配置在清单文件中，从而会接收广播更新桌面组件，App仅在此种情况下会自启动。
 
 ### 使用到的第三方 SDK
-下面按照特定格式声明第三方SDK的使用情况。：SDK名称 | 使用场景 | 收集的个人信息 | 使用目的 | SDK提供方 | 隐私政策链接
+下面按照特定格式声明第三方SDK的使用情况：SDK名称 | 使用场景 | 收集的个人信息 | 使用目的 | SDK提供方 | 隐私政策链接
 
 **微信OpenSDK** | 微信授权微信好友和微信朋友圈分享、支付功能 | 是否安装微信、网络状态-在Android系统中验证用户设备上安装微信APP的状态，用于确认该设备是否能够实现Open SDK的相关能力；用户进行支付操作后向第三方应用传输本次支付是否成功的状态信息。| 深圳市腾讯计算机系统有限公司 | [链接](https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8)
 **友盟SDK** | 数据分析 | App-Secret、设备id信息(OAID\Android ID\ICCID\IMSI)、sdkName、sdkVersion、osName、osVersion、locale、timeZoneOffset、appVersion、appBuild； | 统计使用路径和行为，网络状态，为用户提供精细化策略，提升用户使用体验。| 友盟同欣（北京）科技有限公司 | [链接](https://www.umeng.com/page/policy)
