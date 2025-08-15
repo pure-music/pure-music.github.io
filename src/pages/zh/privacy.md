@@ -51,10 +51,10 @@ layout: '~/layouts/MarkdownLayout.astro'
     padding: 8px;
     vertical-align: top;
     word-wrap: break-word; /* 新增：允许长文本换行 */
+    font-size: 12px; /* 减小表格文字大小 */
   }
   .sdk-name {
     width: 12%; /* 调整宽度比例 */
-    font-weight: bold;
   }
   .usage-scenario {
     width: 18%; /* 增加使用场景列宽度 */
