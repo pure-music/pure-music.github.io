@@ -57,7 +57,7 @@ layout: '~/layouts/MarkdownLayout.astro'
     width: 12%; /* 调整宽度比例 */
   }
   .usage-scenario {
-    width: 18%; /* 增加使用场景列宽度 */
+    width: 16%; /* 增加使用场景列宽度 */
   }
   .collected-info, .purpose {
     width: 25%; /* 适当减少这两列宽度 */
@@ -66,7 +66,7 @@ layout: '~/layouts/MarkdownLayout.astro'
     width: 12%;
   }
   .privacy-link {
-    width: 8%; /* 隐私政策链接列宽度 */
+    width: 10%; /* 隐私政策链接列宽度 */
   }
 </style>
 
