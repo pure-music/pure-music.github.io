@@ -50,22 +50,25 @@ layout: '~/layouts/MarkdownLayout.astro'
     border: 1px;
     padding: 8px;
     vertical-align: top;
-  }
-  .sdk-table th {
-    text-align: left;
+    word-wrap: break-word; /* 新增：允许长文本换行 */
   }
   .sdk-name {
+    width: 12%; /* 调整宽度比例 */
     white-space: nowrap;
     font-weight: bold;
   }
-  .privacy-link {
-    white-space: nowrap;
-  }
-  .usage-scenario, .provider {
-    width: 15%;
+  .usage-scenario {
+    width: 18%; /* 增加使用场景列宽度 */
   }
   .collected-info, .purpose {
-    width: 35%;
+    width: 25%; /* 适当减少这两列宽度 */
+  }
+  .provider {
+    width: 12%;
+  }
+  .privacy-link {
+    width: 8%; /* 隐私政策链接列宽度 */
+    white-space: nowrap;
   }
 </style>
 
