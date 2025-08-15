@@ -54,7 +54,6 @@ layout: '~/layouts/MarkdownLayout.astro'
   }
   .sdk-name {
     width: 12%; /* 调整宽度比例 */
-    white-space: nowrap;
     font-weight: bold;
   }
   .usage-scenario {
@@ -68,7 +67,6 @@ layout: '~/layouts/MarkdownLayout.astro'
   }
   .privacy-link {
     width: 8%; /* 隐私政策链接列宽度 */
-    white-space: nowrap;
   }
 </style>
 
