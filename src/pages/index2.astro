@@ -1,0 +1,30 @@
+---
+import Layout from "~/layouts/PageLayout2.astro";
+import Hero2 from '~/components/widgets/Hero2.astro';
+import { t, changeLanguage } from "i18next";
+
+changeLanguage("en");
+
+const metadata = {
+    title: t("site.title"),
+    description: t("site.description"),
+    ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  
+  <Hero2
+    tagline="公司简介"
+    title="深圳市致简未来科技有限公司"
+    subtitle="公司致力于互联网软件开发、产品设计、运营、企业SaSS等领域的技术服务与解决方案。"
+    actions={[
+     
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: '',
+    }}
+  />
+
+</Layout>
