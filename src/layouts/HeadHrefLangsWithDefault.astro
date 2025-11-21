@@ -9,17 +9,18 @@ const currentUrl = new URL(Astro.url.pathname, SITE.site).href;
 
 {
   supportedLanguages.map(
-    (supportedLanguage) => (
-    <link
-      rel="alternate"
-      hreflang={supportedLanguage}
-      href={localizeUrl(currentUrl, supportedLanguage)} />
-    )
+    (supportedLanguage) =>
+      supportedLanguage !== 'cimode' && (
+        <link
+          rel="alternate"
+          hreflang={supportedLanguage}
+          href={localizeUrl(currentUrl, supportedLanguage)} />
+      )
   )
 }
 {
   <link
     rel="alternate"
     hreflang="x-default"
-    href={localizeUrl(currentUrl, "en")} />
+    href={currentUrl} />
 }
