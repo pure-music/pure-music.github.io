@@ -42,7 +42,7 @@ const { metadata = {} } = Astro.props;
     <ViewTransitions fallback="swap" />
     
     <script>
-      const supportedLanguages = ['zh'];
+      const supportedLanguages = ['zh', 'en'];
 
       function getLocalizedPath(pathname) {
         if (supportedLanguages.some((lang) => pathname.startsWith(`/${lang}`))) {
