@@ -19,7 +19,9 @@
     "home": {
       "title": "棉花音乐",
       "app_description": "随时随地听音乐",
-      "app_store": "应用市场",
+      "android_app_store": "应用市场",
+      "android_app_store_url": "https://m.malink.cn/s/faInQj",
+      "ios_app_store": "App Store",
       "description": "支持本地歌曲、百度网盘、阿里云盘、WebDAV、GoogleDrive、OneDrive、Dropbox等网盘歌曲播放，支持Plex、Emby、Jelly、Subsonic媒体服务器，支持Android、iOS, Windows、Mac、Linux平台"
     },
     "features": {
