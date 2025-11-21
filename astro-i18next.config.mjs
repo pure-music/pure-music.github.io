@@ -1,4 +1,5 @@
 export default {
-  defaultLocale: "default",
-  locales: ["default", "en", "zh"],
+  defaultLocale: "en",
+  locales: ["en", "zh"],
+  routing: "prefix",
 };
