@@ -1,7 +1,7 @@
 {
   "site": {
-    "app_name": "棉花音乐",
-    "title": "棉花音乐",
+    "app_name": "棉花音乐(棉花音频播放器)",
+    "title": "棉花音乐(棉花音频播放器)",
     "description": "支持本地歌曲、百度网盘、阿里云盘、WebDAV、GoogleDrive、OneDrive、Dropbox、Plex、Emby、Jelly、Subsoni音乐播放器"
   },
   "main": {
@@ -17,7 +17,7 @@
       "download": "下载"
     },
     "home": {
-      "title": "棉花音乐",
+      "title": "棉花音乐(棉花音频播放器)",
       "app_description": "随时随地听音乐",
       "android_app_store": "应用市场",
       "android_app_store_url": "market://details?id=com.caij.puremusic",

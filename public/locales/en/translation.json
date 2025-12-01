@@ -1,7 +1,7 @@
 {
   "site": {
-    "app_name": "PureMusic",
-    "title": "PureMusic",
+    "app_name": "Cotton Music Player",
+    "title": "Cotton Music Player",
     "description": "Play and cast music from your device, Plex, Emby, Jellyfin, Subsonic, OpenSubsonic, Kodi, Samba (SMB v2/v3), WebDAV servers or supported Cloud providers (Google Drive, OneDrive, DropBox, Box, pCloud)!"
   },
   "main": {
@@ -23,7 +23,7 @@
       "description": "Play and cast music from your device, Plex, Emby, Jellyfin, Subsonic, OpenSubsonic, Kodi, Samba (SMB v2/v3), WebDAV servers or supported Cloud providers (Google Drive, OneDrive, DropBox, Box, pCloud)! Support Android, iOS, Windows, Mac, and Linux platforms, Don't wait any longer and enjoy the ultimate music experience. Download now to change the way you listen to music."
     },
     "features": {
-      "title": "What you get with PureMusic",
+      "title": "What you get with Cotton Music",
       "item1": {
         "title": "Media Source",
         "description": "Supports playback from local storage, Baidu Netdisk, Alibaba Cloud, WebDAV, Google Drive, OneDrive, Dropbox."
